@@ -1,6 +1,10 @@
 <template>
-  <div class="shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-12 rounded-[2rem]">
-    <div class="flex justify-start">
+  <div
+    class="shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-12 rounded-[2rem]"
+    v-for="(service, index) in services"
+    :key="index"
+  >
+    <div class="flex justify-start items-center h-[5rem]">
       <div
         class="
           flex
@@ -13,7 +17,7 @@
           mr-4
         "
       >
-        <img src="@/assets/icons/appicon.svg" alt="" class="w-[2rem]" />
+        <img :src="service.iconImg" alt="" class="w-[2rem]" />
       </div>
       <p
         class="
@@ -23,8 +27,7 @@
           font-[600] font-['Kanit-Bold']
         "
       >
-        Application <br />
-        Development
+        {{ service.title }}
       </p>
     </div>
     <h4
@@ -37,9 +40,44 @@
         font-['Kanit-Medium']
       "
     >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s.
+      {{ service.description }}
     </h4>
   </div>
 </template>
+
+
+
+<script>
+export default {
+  data() {
+    return {
+      services: [
+        {
+          iconImg: require("@/assets/icons/appicon.svg"),
+          title: "Application Developement",
+          description:
+            "We provide a variety of high-quality desktop applications to assist you in running your business more effectively and efficiently.",
+        },
+        {
+          iconImg: require("@/assets/icons/cloud.svg"),
+          title: "Cloud Computing",
+          description:
+            "We provide cloud services integration solutions that enable scalable computation for seamless connection with business intelligence, CRM, ERP, and identity management systems.",
+        },
+        {
+          iconImg: require("@/assets/icons/uiux.svg"),
+          title: "UI/UX",
+          description:
+            "We design responsive and attractive websites that meet all of your requirements while staying within your schedule and budget constraints.",
+        },
+        {
+          iconImg: require("@/assets/icons/seo.svg"),
+          title: "Seo",
+          description:
+            "We serve clients who demand a comprehensive, full-service search engine marketing strategy.",
+        },
+      ],
+    };
+  },
+};
+</script>

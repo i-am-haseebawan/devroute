@@ -1,6 +1,6 @@
 <template>
   <div id="Home" class="relative overflow-hidden hero-section-main">
-    <div class="mx-auto max-w-[80%] sticky top-0">
+    <div class="mx-auto max-w-[80%]">
       <div class="relative px-4 pt-10 sm:px-6 lg:px-8">
         <nav
           class="relative flex items-center justify-between sm:h-10"
@@ -117,175 +117,170 @@
             >
           </div>
         </nav>
-      </div>
-      <div
-        class="
-          absolute
-          inset-x-0
-          top-0
-          z-auto
-          origin-top-right
-          transform
-          p-2
-          transition
-          md:hidden
-        "
-      >
         <div
           class="
-            overflow-hidden
-            rounded-lg
-            bg-white
-            shadow-md
-            ring-1 ring-black ring-opacity-5
-            pb-0
+            absolute
+            inset-x-0
+            top-2
+            z-auto
+            origin-top-right
+            transform
+            p-2
+            transition
+            md:hidden
           "
-          v-if="isVisible"
         >
-          <div class="flex items-center justify-between px-5 pt-4">
-            <div>
-              <img
-                class="h-8 w-auto"
-                src="@/assets/images/navlogo.svg"
-                alt=""
-              />
-            </div>
-            <div class="-mr-2">
-              <button
-                type="button"
-                class="
-                  inline-flex
-                  items-center
-                  justify-center
-                  rounded-md
-                  bg-white
-                  p-2
-                  text-gray-400
-                  hover:bg-gray-100 hover:text-gray-500
-                  focus:outline-none
-                  focus:ring-2
-                  focus:ring-inset
-                  focus:ring-indigo-500
-                "
-                @click="closeMobNavbar"
-              >
-                <span class="sr-only" >Close main menu</span>
-                <!-- Heroicon name: outline/x-mark -->
-                <svg
-                  class="h-12 w-12"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
+          <div
+            class="
+              overflow-hidden
+              rounded-lg
+              bg-white
+              shadow-md
+              ring-1 ring-black ring-opacity-5
+              pb-0
+            "
+            v-if="isVisible"
+          >
+            <div class="flex items-center justify-between px-5 pt-4">
+              <div>
+                <img
+                  class="h-8 w-auto"
+                  src="@/assets/images/navlogo.svg"
+                  alt=""
+                />
+              </div>
+              <div class="-mr-2">
+                <button
+                  type="button"
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    rounded-md
+                    bg-white
+                    p-2
+                    text-gray-400
+                    hover:bg-gray-100 hover:text-gray-500
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-inset
+                    focus:ring-indigo-500
+                  "
+                  @click="closeMobNavbar"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
+                  <span class="sr-only">Close main menu</span>
+                  <!-- Heroicon name: outline/x-mark -->
+                  <svg
+                    class="h-12 w-12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="space-y-1 pt-2 pb-0">
-            <a
-              href="#Home"
-              class="
-                block
-                rounded-md
-                px-3
-                py-2
-                font-medium
-                text-gray-700
-                hover:bg-gray-50 hover:text-gray-900
-                text-[2rem]
-                font-['Kanit-Medium']
-                border-b-2
-                border-[#288DDD]
-              "
-              >Home</a
-            >
+            <div class="space-y-1 pt-2 pb-0">
+              <a
+                href="#Home"
+                class="
+                  block
+                  rounded-md
+                  px-3
+                  py-2
+                  font-medium
+                  text-gray-700
+                  hover:bg-gray-50 hover:text-gray-900
+                  text-[2rem]
+                  font-['Kanit-Medium']
+                  border-b-2 border-[#288DDD]
+                "
+                >Home</a
+              >
 
-            <a
-              href="#Services"
-              class="
-                block
-                rounded-md
-                px-3
-                py-2
-                text-[2rem]
-                font-medium
-                text-gray-700
-                hover:bg-gray-50 hover:text-gray-900
-                font-['Kanit-Medium']
-                border-b-2
-                border-[#288DDD]
-              "
-              >Services</a
-            >
+              <a
+                href="#Services"
+                class="
+                  block
+                  rounded-md
+                  px-3
+                  py-2
+                  text-[2rem]
+                  font-medium
+                  text-gray-700
+                  hover:bg-gray-50 hover:text-gray-900
+                  font-['Kanit-Medium']
+                  border-b-2 border-[#288DDD]
+                "
+                >Services</a
+              >
 
-            <a
-              href="#Portfolio"
-              class="
-                block
-                rounded-md
-                px-3
-                py-2
-                text-[2rem]
-                font-medium
-                text-gray-700
-                hover:bg-gray-50 hover:text-gray-900
-                font-['Kanit-Medium']
-                border-b-2
-                border-[#288DDD]
-              "
-              >Portfolio</a
-            >
+              <a
+                href="#Portfolio"
+                class="
+                  block
+                  rounded-md
+                  px-3
+                  py-2
+                  text-[2rem]
+                  font-medium
+                  text-gray-700
+                  hover:bg-gray-50 hover:text-gray-900
+                  font-['Kanit-Medium']
+                  border-b-2 border-[#288DDD]
+                "
+                >Portfolio</a
+              >
 
-            <a
-              href="#Technologies"
-              class="
-                block
-                rounded-md
-                px-3
-                py-2
-                text-[2rem]
-                font-medium
-                text-gray-700
-                hover:bg-gray-50 hover:text-gray-900
-                font-['Kanit-Medium']
-                border-b-2
-                border-[#288DDD]
-              "
-              >Technologies</a
-            >
+              <a
+                href="#Technologies"
+                class="
+                  block
+                  rounded-md
+                  px-3
+                  py-2
+                  text-[2rem]
+                  font-medium
+                  text-gray-700
+                  hover:bg-gray-50 hover:text-gray-900
+                  font-['Kanit-Medium']
+                  border-b-2 border-[#288DDD]
+                "
+                >Technologies</a
+              >
 
-            <a
-              href="#Contact"
-              class="
-                block
-                rounded-md
-                px-3
-                py-2
-                text-[2rem]
-                font-medium
-                text-gray-700
-                hover:bg-gray-50 hover:text-gray-900
-                font-['Kanit-Medium']
-                border-b-2
-                border-[#288DDD]
-              "
-              >Contact</a
-            >
+              <a
+                href="#Contact"
+                class="
+                  block
+                  rounded-md
+                  px-3
+                  py-2
+                  text-[2rem]
+                  font-medium
+                  text-gray-700
+                  hover:bg-gray-50 hover:text-gray-900
+                  font-['Kanit-Medium']
+                  border-b-2 border-[#288DDD]
+                "
+                >Contact</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="mx-auto max-w-[80%]">
       <main class="mt-56 px-4 sm:px-6 lg:px-8">
-        <div class="sm:text-center lg:text-left">
+        <div class="lg:text-left sm:text-center md:text-left">
           <h1
             class="
               font-[600]
@@ -300,7 +295,9 @@
           <p
             class="
               mt-8
-              sm:mx-auto sm:max-w-[50rem]
+              sm:mx-auto
+              md:mx-0
+              sm:max-w-[50rem]
               lg:mx-0
               text-[2rem]
               leading-[2.6rem]
@@ -313,7 +310,9 @@
             commodo eu. Mauris mollis dolor at sem aliquet placerat.
             Pellentesque velit.
           </p>
-          <div class="mt-20 flex justify-center lg:justify-start">
+          <div
+            class="mt-20 flex justify-center md:justify-start lg:justify-start"
+          >
             <div class="rounded-md shadow w-fit">
               <a
                 href="#"
@@ -363,13 +362,13 @@ export default {
       isVisible: false,
     };
   },
-  methods:{
-    closeMobNavbar(){
-      this.isVisible = false
+  methods: {
+    closeMobNavbar() {
+      this.isVisible = false;
     },
-    openMobNavbar(){
-      this.isVisible = true
-    }
-  }
+    openMobNavbar() {
+      this.isVisible = true;
+    },
+  },
 };
 </script>

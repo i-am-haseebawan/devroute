@@ -8,10 +8,7 @@
       in web and mobile app design, development, integration, <br />
       and customization.
     </p>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 mt-64 ">
-      <ServicesCard></ServicesCard>
-      <ServicesCard></ServicesCard>
-      <ServicesCard></ServicesCard>
+    <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-64 ">
       <ServicesCard></ServicesCard>
     </div>
   </section>

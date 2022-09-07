@@ -8,8 +8,10 @@
           class="
             lg:flex-grow
             md:w-1/2
-            lg:pr-52
+            lg:pr-16
             md:pr-8
+            xl:pr-42
+            2xl:pr-42
             flex flex-col
             md:items-start md:text-left
             mb-16
@@ -26,7 +28,7 @@
               font-['Kanit-Semibold']
             "
           >
-            Glocal, United States
+            Lorem Ipsum,
           </p>
           <h1
             class="

@@ -20,7 +20,7 @@
     >
       Reach out to us and we get back to you shortly !
     </p>
-    <div class="contact-background flex justify-center items-flex-start">
+    <div class="contact-background flex justify-center items-flex-start mt-12">
       <div
         class="
           block
@@ -150,7 +150,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 108rem;
-  background-position: center;
+  background-position-y: bottom;
+  background-position-x: unset;
   width: 100%;
 }
 </style>
