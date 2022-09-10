@@ -1,6 +1,15 @@
 <template>
   <div
-    class="shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-12 rounded-[2rem]"
+    class="
+      shadow-[0_4px_30px_rgba(0,0,0,0.1)]
+      p-12
+      rounded-[2rem]
+      border-transparent border-2
+      hover:border-[#288ddd]
+      ease-in-out
+      duration-300
+      card
+    "
     v-for="(service, index) in services"
     :key="index"
   >
