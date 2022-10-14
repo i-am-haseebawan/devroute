@@ -85,18 +85,6 @@ export default {
   components: {
     TheNavbar,
   },
-  data() {
-    return {
-      isVisible: false,
-    };
-  },
-  methods: {
-    closeMobNavbar() {
-      this.isVisible = false;
-    },
-    openMobNavbar() {
-      this.isVisible = true;
-    },
-  },
+  
 };
 </script>

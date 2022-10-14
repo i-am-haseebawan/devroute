@@ -139,9 +139,9 @@
         "
         v-if="isVisible"
       >
-        <div class="flex items-center justify-between px-5 pt-4">
+        <div class="flex items-center justify-between px-5 py-4 bg-[#288ddd]">
           <div>
-            <img class="h-8 w-auto" src="@/assets/images/navlogo.svg" alt="" />
+            <img class="h-10 w-auto" src="@/assets/images/navlogo.svg" alt="" />
           </div>
           <div class="-mr-2">
             <button
@@ -272,3 +272,21 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isVisible: false,
+    };
+  },
+  methods: {
+    closeMobNavbar() {
+      this.isVisible = false;
+    },
+    openMobNavbar() {
+      this.isVisible = true;
+    },
+  },
+};
+</script>
